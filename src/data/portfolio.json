@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "title":"Timer idk Or Picture",
+    "yearCreated": 2025,
+    "media": "black and white",
+    "type": "photography",
+    "description": "I dont even know man",
+    "highResImages": ["path/to/image/1","path/to/image/2"],
+    "youTubeUrl": "url to video"
+  },
+  {
+    "id": 2,
+    "title":"Packaging Design",
+    "yearCreated": 2024,
+    "type": "packaging",
+    "description": "I dont even know man",
+    "highResImages": ["path/to/image/1","path/to/image/2"],
+    "youTubeUrl": "url to video"
+  }
+]
