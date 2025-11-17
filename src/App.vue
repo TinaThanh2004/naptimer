@@ -21,29 +21,27 @@ body {
   section.container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
+    width: 700px;
+    height: 200px;
+    margin: 24px auto;
 
-    > * {
-      border: 1px solid white;
-    }
 
     .content {
-      background-color: lightgray;
+      background-color: white;
       color: black;
       padding: 10px;
       border-radius: 10px;
 
-      p {
-        &:first-of-type {
-          margin-top: 0;
 
-        }
-
-        &:last-of-type {
-          margin-bottom: 0;
-        }
       }
     }
   }
+
+footer {
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: auto;
 }
 </style>

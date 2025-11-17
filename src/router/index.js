@@ -1,27 +1,34 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Homepage from '@/views/Homepage.vue'
-import ContactMe from '@/views/ContactMe.vue'
-import AboutMe from '@/views/AboutMe.vue'
+import NapTimerHome from '@/views//NapTimerHome.vue'
+import NapTimerSelect from '@/views//NapTimerSelect.vue'
+import NapTimerRunning from '@/views//NapTimerRunning.vue'
+import NapTimerAlarm from '@/views//NapTimerAlarm.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
-      name: 'home',
-      component: Homepage,
+      path: '',
+      name: 'nap-home',
+      component: NapTimerHome,
     },
     {
-      path: '/',
-      name: 'about',
-      component: AboutMe,
+      path: '/nap/select',
+      name: 'nap-select',
+      component: NapTimerSelect,
     },
     {
-      path: '/',
-      name: 'contact',
-      component: ContactMe,
+      path: '/nap/running',
+      name: 'nap-running',
+      component: NapTimerRunning,
+    },
+    {
+      path: '/nap/alarm',
+      name: 'nap-alarm',
+      component: NapTimerAlarm,
     },
   ],
 })
+
 
 export default router
