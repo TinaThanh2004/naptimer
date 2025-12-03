@@ -1,67 +1,58 @@
 <script setup>
-import catlogo from '@/picture/catlogo.png'
+import catlogo from '@/picture/catlogoother.png'
+import MyButton from './MyButton.vue'
 </script>
 
 <template>
-  <div class="container">
-    <div class="logo">
-      <img :src="catlogo" alt="CatLogo" />
+  <header class="top-area">
+    <div class="container">
+      <div class="logo">
+        <img :src="catlogo" alt="Cat Logo" />
+      </div>
     </div>
-  </div>
-  <nav>
-    <my-button link-text="Home" route-name="Home" theme="primary"/>
-    <my-button link-text="Select" route-name="AboutMe"/>
-    <my-button link-text="Running" route-name="MultiplicationTable"/>
-    <my-button link-text="Alarm" route-name="Portfolio"/>
-    <my-button link-text="Cats" route-name="Cats"/>
-  </nav>
+
+    <nav>
+      <MyButton link-text="Home" route-name="nap-home" theme="primary" />
+      <MyButton link-text="Select" route-name="nap-select" />
+      <MyButton link-text="Running" route-name="nap-running" />
+      <MyButton link-text="Alarm" route-name="nap-alarm" />
+      <MyButton link-text="Cats" route-name="nap-cats" />
+    </nav>
+  </header>
 </template>
 
 <style scoped>
-div.container {
+.top-area {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   padding: 10px 0;
+  width: 100%;
 }
 
-div.logo {
-  width: 100px;
-  height: 100px;
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   overflow: hidden;
-  margin-top: 10px;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+  margin-bottom: 10px;
 }
 
-  @media (min-width: 650px) {
-    flex-direction: row;
-  }
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-</style>
-
-
-<style scoped>
 nav {
   display: flex;
-  gap: 15px;
+  gap: 10px;
   justify-content: center;
   align-items: center;
-  /* code here would apply to the contents of nav (like the links) */
-
-  a {
-    text-decoration: none;
-
-    &.router-link-active {
-      font-weight: bold;
-      text-decoration: underline;
-    }
-  }
 }
 </style>

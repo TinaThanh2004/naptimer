@@ -3,45 +3,43 @@ import NavBar from '@/components/icons/NavBar.vue'
 </script>
 
 <template>
-  <section class="container">
-    <header>
-      <NavBar />
-    </header>
+  <div class="layout">
+    <NavBar />
 
-    <section class="content">
+    <main class="content">
       <router-view />
-    </section>
+    </main>
 
-    <footer>Made by Tina</footer>
-  </section>
+    <footer>
+      Made by Tina
+    </footer>
+  </div>
 </template>
 
 <style scoped>
-body {
-  section.container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    width: 700px;
-    height: 200px;
-    margin: 24px auto;
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
-
-    .content {
-      background-color: white;
-      color: black;
-      padding: 10px;
-      border-radius: 10px;
-
-
-      }
-    }
-  }
+.content {
+  flex: 1;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
 
 footer {
-  padding: 20px;
   text-align: center;
-  border-radius: 8px;
-  margin-top: auto;
+  padding: 20px 0;
+  font-size: 14px;
+  opacity: 0.8;
 }
 </style>
