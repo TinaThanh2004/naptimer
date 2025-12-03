@@ -2,13 +2,19 @@
 import catlogo from '@/picture/catlogo.png'
 </script>
 
-
 <template>
   <div class="container">
     <div class="logo">
       <img :src="catlogo" alt="CatLogo" />
     </div>
   </div>
+  <nav>
+    <my-button link-text="Home" route-name="Home" theme="primary"/>
+    <my-button link-text="Select" route-name="AboutMe"/>
+    <my-button link-text="Running" route-name="MultiplicationTable"/>
+    <my-button link-text="Alarm" route-name="Portfolio"/>
+    <my-button link-text="Cats" route-name="Cats"/>
+  </nav>
 </template>
 
 <style scoped>
@@ -41,20 +47,21 @@ div.logo {
 </style>
 
 
-<!--div.links {-->
-<!--display: flex;-->
-<!--flex-direction: column;-->
-<!--gap: 10px;-->
+<style scoped>
+nav {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  /* code here would apply to the contents of nav (like the links) */
 
-<!--a {-->
-<!--color: white;-->
-<!--text-decoration: none;-->
-<!--border: 1px solid white;-->
-<!--padding: 10px;-->
-<!--transition: all 0.2s;-->
-<!--}-->
+  a {
+    text-decoration: none;
 
-<!--a:hover {-->
-<!--background-color: white;-->
-<!--color: black;-->
-<!--}-->
+    &.router-link-active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+}
+</style>

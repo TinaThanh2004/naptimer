@@ -5,7 +5,7 @@ import NavBar from '@/components/icons/NavBar.vue'
 <template>
   <section class="container">
     <header>
-      <nav-bar/>
+      <NavBar />
     </header>
 
     <section class="content">
