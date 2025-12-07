@@ -1,62 +1,44 @@
 [
   {
     "id": 1,
-    "name": "Linguini",
-    "pose": "Curled loaf",
-    "location": "Sunbeam on the couch",
-    "duration": "45 minutes",
-    "mood": "Dreaming of snacks",
-    "blanket": "Blue fleece",
-    "sound": "Soft rain",
-    "thumbnail": "https://placekitten.com/150/150",
-    "image": "https://placekitten.com/600/400"
+    "title": "Pebble",
+    "description": "A cute cat wearing a sunflower hat.",
+    "when_created": 2023,
+    "thumbnail": "https://images.unsplash.com/photo-1617149644366-4a706befabef?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     "id": 2,
-    "name": "Mochi",
-    "pose": "Sploot",
-    "location": "Under the dining table",
-    "duration": "2 hours",
-    "mood": "Completely knocked out",
-    "blanket": "Pink sherpa",
-    "sound": "Ocean waves",
-    "thumbnail": "https://placekitten.com/151/151",
-    "image": "https://placekitten.com/601/401"
+    "title": "Blinky",
+    "description": "A cat that got forced into the sweater, now is angry.",
+    "when_created": 2021,
+    "thumbnail": "https://images.unsplash.com/photo-1714153348867-4885d19dc701?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     "id": 3,
-    "name": "Boba",
-    "pose": "Upside-down belly reveal",
-    "location": "Owner’s lap",
-    "duration": "30 minutes",
-    "mood": "Attention seeker",
-    "blanket": "Knitted wool",
-    "sound": "Forest ambience",
-    "thumbnail": "https://placekitten.com/152/152",
-    "image": "https://placekitten.com/602/402"
+    "title": "Bob n Rob",
+    "description": "An orange tabby posing dramatically.",
+    "when_created": 2020,
+    "thumbnail": "https://images.unsplash.com/photo-1607571407878-1ebcd663e4d5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     "id": 4,
-    "name": "Nori",
-    "pose": "Superman stretch",
-    "location": "On the rug",
-    "duration": "1 hour",
-    "mood": "Comfy loaf mode",
-    "blanket": "Quilted throw",
-    "sound": "White noise",
-    "thumbnail": "https://placekitten.com/153/153",
-    "image": "https://placekitten.com/603/403"
+    "title": "Sana",
+    "description": "A kitten playing with yarn.",
+    "when_created": 2019,
+    "thumbnail": "https://images.unsplash.com/photo-1671992070480-9ce1434b8471?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     "id": 5,
-    "name": "Taro",
-    "pose": "Tiny donut curl",
-    "location": "Inside a cardboard box",
-    "duration": "3 hours",
-    "mood": "Cozy cocoon",
-    "blanket": "Cotton towel",
-    "sound": "Wind chimes",
-    "thumbnail": "https://placekitten.com/154/154",
-    "image": "https://placekitten.com/604/404"
+    "title": "Linguistic",
+    "description": "A kitten playing with yarn.",
+    "when_created": 2019,
+    "thumbnail": "https://images.unsplash.com/photo-1632252036457-f6d3dab5572f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 6,
+    "title": "Snowball",
+    "description": "A very round cat staring into the distance.",
+    "when_created": 2023,
+    "thumbnail": "https://images.pexels.com/photos/17802936/pexels-photo-17802936.jpeg"
   }
 ]

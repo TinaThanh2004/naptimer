@@ -17,7 +17,6 @@ defineProps({
 <style scoped>
 a {
   padding: 5px 10px;
-  border: white 1px solid;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
@@ -25,11 +24,11 @@ a {
 
 a {
   background-color: #4267b2;
-  color: white;
+  color: #c0defc;
 }
 
 a:hover {
-  background-color: white;
+  background-color: #c0defc;
   color: #4267b2;
 }
 

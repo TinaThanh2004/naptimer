@@ -3,9 +3,9 @@ import NapTimerHome from '@/views/NapTimerHome.vue'
 import NapTimerSelect from '@/views/NapTimerSelect.vue'
 import NapTimerRunning from '@/views/NapTimerRunning.vue'
 import NapTimerAlarm from '@/views/NapTimerAlarm.vue'
-import Cats from '@/views/Info/ItemDetail.vue'
 
-
+import AllItems from '@/views/Info/AllItems.vue'
+import ItemDetail from '@/views/Info/ItemDetail.vue'
 
 const index = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -31,9 +31,19 @@ const index = createRouter({
       component: NapTimerAlarm,
     },
     {
-      path: '/nap/cats/',
-      name: 'nap-cats',
-      component: Cats,
+      path: '/nap/cats',
+      children: [
+        {
+          path: '',
+          name: 'nap-cats',
+          component: AllItems,
+        },
+        {
+          path: ':portfolioId',
+          name: 'nap-cat-detail',
+          component: ItemDetail,
+        },
+      ],
     },
   ],
 })
