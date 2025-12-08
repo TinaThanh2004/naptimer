@@ -1,6 +1,10 @@
 <template>
   <div class="page">
-    <h1>Select Time</h1>
+    <h1>
+      <img src="@/picture/alarm.svg" alt="alarm icon" class="title-icon" />
+      Select Time
+      <img src="@/picture/alarm.svg" alt="alarm icon" class="title-icon" />
+    </h1>
 
     <div class="box">
       <div class="grid-box">
@@ -33,7 +37,13 @@ function choose(minutes) {
   font-weight: 400;
   font-style: normal;
   color: #4267b2;
+}
 
+.title-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
 .box {

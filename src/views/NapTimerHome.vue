@@ -7,12 +7,15 @@
     </div>
 
     <button @click="$router.push({ name: 'nap-select' })">
+      <img :src="ClickIcon" alt="click icon" class="btn-icon" />
       Set Timer
     </button>
+
   </div>
 </template>
 
 <script setup>
+import ClickIcon from '@/picture/click.svg'
 </script>
 
 <style scoped>
@@ -65,5 +68,13 @@ button:hover {
   background: #365a9c;
   transform: translateY(-3px);
 }
+
+.btn-icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
 
 </style>

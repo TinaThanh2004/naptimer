@@ -1,27 +1,21 @@
 <script setup>
-import portfolioData from '@/data/portfolio.json'
+import portfolioData from '@/data/catsinfo.json'
 </script>
 
 <template>
   <h1 class="title">Sleeping Cats for Serotonin</h1>
 
   <div class="container">
-    <div
-      class="preview-card"
+    <router-link
       v-for="item in portfolioData"
       :key="item.id"
+      class="preview-card"
+      :to="{ name: 'nap-cat-detail', params: { portfolioId: item.id } }"
     >
       <img class="thumb" :src="item.thumbnail" :alt="item.title" />
-
       <h2 class="name">{{ item.title }}</h2>
-
-      <router-link
-        class="learn-more"
-        :to="{ name: 'nap-cat-detail', params: { portfolioId: item.id } }"
-      >
-        Learn More
-      </router-link>
-    </div>
+      <span class="learn-more">Learn More</span>
+    </router-link>
   </div>
 </template>
 
@@ -34,7 +28,6 @@ import portfolioData from '@/data/portfolio.json'
   text-align: center;
   margin-bottom: 20px;
   color: #4267b2;
-
 }
 
 .container {
@@ -45,6 +38,23 @@ import portfolioData from '@/data/portfolio.json'
   color: #4267b2;
 }
 
+.preview-card {
+  display: block;
+  border-radius: 12px;
+  padding: 16px;
+  background: #08003a;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  text-align: center;
+  color: #c0defc;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.preview-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
 .thumb {
   width: 100%;
   height: 120px;
@@ -52,32 +62,23 @@ import portfolioData from '@/data/portfolio.json'
   object-fit: cover;
 }
 
-.preview-card {
-  border-radius: 12px;
-  padding: 16px;
-  background: #08003a;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-.thumb {
-  width: 100%;
-  border-radius: 10px;
-  object-fit: cover;
+.name {
+  margin-top: 10px;
+  margin-bottom: 4px;
+  font-weight: 700;
+  color: #c0defc;
 }
 
 .learn-more {
   display: inline-block;
   margin-top: 8px;
   font-weight: 600;
-  color: #c0defc;
-  text-decoration: none;
+  color: #9ad1ff;
+  transition: color 0.2s;
 }
 
-.name {
-  margin-top: 10px;
-  margin-bottom: 4px;
-  font-weight: 700;
+.preview-card:hover .learn-more {
+  color: #ffffff;
 }
 
 @media (min-width: 600px) {

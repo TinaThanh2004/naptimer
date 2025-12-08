@@ -1,6 +1,10 @@
 <template>
   <div class="page">
-    <h1>Countdown...</h1>
+    <h1>
+      <img src="@/picture/run.svg" alt="run icon" class="title-icon" />
+      Countdown...
+      <img src="@/picture/run.svg" alt="run icon" class="title-icon" />
+    </h1>
 
     <div class="box timer">
       <span>{{ formattedTime }}</span>
@@ -54,6 +58,13 @@ onMounted(() => {
 
 
 <style scoped>
+
+.title-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
 
 .box {
   width: 300px;
