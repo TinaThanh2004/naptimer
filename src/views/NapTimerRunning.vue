@@ -60,8 +60,8 @@ onMounted(() => {
 <style scoped>
 
 .title-icon {
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   margin-right: 10px;
   vertical-align: middle;
 }
@@ -87,7 +87,7 @@ onMounted(() => {
 
 .page {
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   font-family: "Fascinate Inline", system-ui;
   font-weight: 400;
   font-style: normal;
@@ -99,7 +99,7 @@ onMounted(() => {
   width: 300px;
   height: 200px;
   margin: 24px auto 32px;
-  background:#2b2278;
+  background: #08003a;
   border-radius: 20px;
 
   display: flex;
@@ -108,7 +108,7 @@ onMounted(() => {
 
   font-size: 3rem;
   font-weight: bold;
-  color: #4267b2;
+  color: #c0defc;
 }
 
 

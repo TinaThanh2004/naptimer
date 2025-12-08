@@ -32,7 +32,7 @@ function choose(minutes) {
 
 .page {
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   font-family: "Fascinate Inline", system-ui;
   font-weight: 400;
   font-style: normal;
@@ -50,7 +50,7 @@ function choose(minutes) {
   width: 300px;
   height: 200px;
   margin: 24px auto 125px;
-  background:#2b2278;
+  background: #08003a;
   padding: 0 30px;
   border-radius: 20px;
 
@@ -76,8 +76,8 @@ function choose(minutes) {
   padding: 10px;
   border: none;
   border-radius: 12px;
-  background:#2b2278;
-  color: #4267b2;
+  background: #08003a;
+  color: #c0defc;
   font-weight: bold;
   font-size: 30px;
   cursor: pointer;

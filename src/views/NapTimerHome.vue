@@ -22,7 +22,7 @@ import ClickIcon from '@/picture/click.svg'
 
 .page {
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   font-family: "Fascinate Inline", system-ui;
   font-weight: 400;
   font-style: normal;
@@ -34,7 +34,7 @@ import ClickIcon from '@/picture/click.svg'
   width: 300px;
   height: 200px;
   margin: 24px auto 30px;
-  background:#2b2278;
+  background: #08003a;
   padding: 0 30px;
   border-radius: 20px;
 
@@ -44,7 +44,7 @@ import ClickIcon from '@/picture/click.svg'
   font-size: 18px;
   font-family: "JetBrains Mono", monospace;
   font-weight: bold;
-  color: #4267b2;
+  color: #c0defc;
   text-align: center;
   line-height: 1.2;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
