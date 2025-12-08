@@ -40,7 +40,7 @@ import MyButton from './MyButton.vue'
   height: 80px;
   border-radius: 50%;
   overflow: hidden;
-  margin-bottom: 10px;
+  margin-bottom: 22px;
 }
 
 .logo img {

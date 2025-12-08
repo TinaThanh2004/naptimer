@@ -36,11 +36,11 @@ onUnmounted(() => {
 
 <style scoped>
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
-
 .page {
   text-align: center;
-  font-family: 'Rubik Scribble', monospace;
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
   color: #4267b2;
 
 }
@@ -75,16 +75,16 @@ onUnmounted(() => {
 }
 
 @keyframes flash-bg {
-  from { background-color: #f8bcbc; }
-  to { background-color: #ffdcdc; }
+  from { background-color: #08003a; }
+  to { background-color: #30247a; }
 }
 
 button {
   padding: 0.5rem 1rem;
   border: none;
-  background: #ff6262;
-  color: white;
+  background: #4267b2;
   border-radius: 10px;
+  color: #c0defc;
   font-weight: bold;
   font-size: 1.2rem;
   cursor: pointer;

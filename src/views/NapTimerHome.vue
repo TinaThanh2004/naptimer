@@ -16,12 +16,13 @@
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
 
 .page {
   text-align: center;
   font-size: 30px;
-  font-family: 'Rubik Scribble', monospace;
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
   color: #4267b2;
 
 }
@@ -30,7 +31,7 @@
   width: 300px;
   height: 200px;
   margin: 24px auto 30px;
-  background: #d3e2f5;
+  background:#2b2278;
   padding: 0 30px;
   border-radius: 20px;
 
@@ -50,7 +51,7 @@ button {
   padding: 13px 29px;
   border: none;
   background: #4267b2;
-  color:  #e9f4ff;
+  color: #c0defc;
   border-radius: 12px;
 
   font-weight: bold;

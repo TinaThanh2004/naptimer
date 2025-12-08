@@ -19,7 +19,7 @@ console.log('JSON:', portfolioData)
     <h1 class="name">{{ itemData.title }}</h1>
 
     <div class="info-box">
-      <p><strong>Description:</strong> {{ itemData.description }}</p>
+      <p><strong>Quote </strong> {{ itemData.quote }}</p>
       <p><strong>Year Created:</strong> {{ itemData.when_created }}</p>
     </div>
 
@@ -46,24 +46,27 @@ console.log('JSON:', portfolioData)
 
 
 .name {
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 35px;
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
   margin-bottom: 10px;
+  color: #08003a;
 }
 
 .info-box {
-  background: #e9f4ff;
+  background: #2b2278;
   padding: 16px;
+  color: #4267b2;
   border-radius: 12px;
   margin-top: 12px;
   line-height: 1.6;
-  border: 1px solid #c0defc;;
 }
 
 .back {
   display: inline-block;
   margin-top: 20px;
-  color: midnightblue;
+  color: #c0defc;
   font-weight: 600;
   text-decoration: none;
 }

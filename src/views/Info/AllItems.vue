@@ -27,11 +27,14 @@ import portfolioData from '@/data/portfolio.json'
 
 <style scoped>
 .title {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 35px;
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
   text-align: center;
   margin-bottom: 20px;
   color: #4267b2;
+
 }
 
 .container {
@@ -52,7 +55,7 @@ import portfolioData from '@/data/portfolio.json'
 .preview-card {
   border-radius: 12px;
   padding: 16px;
-  background: #e9f4ff;
+  background: #08003a;
   box-shadow: 0 1px 4px rgba(0,0,0,0.1);
   text-align: center;
 }
@@ -67,7 +70,7 @@ import portfolioData from '@/data/portfolio.json'
   display: inline-block;
   margin-top: 8px;
   font-weight: 600;
-  color: midnightblue;
+  color: #c0defc;
   text-decoration: none;
 }
 

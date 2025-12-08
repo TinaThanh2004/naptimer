@@ -29,7 +29,7 @@ import NavBar from '@/components/icons/NavBar.vue'
 
 .content {
   flex: 1;
-  background-color: white;
+  background-color: #1f1a4f;
   color: black;
   padding: 20px;
   border-radius: 10px;

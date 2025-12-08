@@ -20,10 +20,21 @@ const timeLeft = ref(0)
 let intervalId = null
 
 const formattedTime = computed(() => {
-  const m = Math.floor(timeLeft.value / 60)
+  const h = Math.floor(timeLeft.value / 3600)
+  const m = Math.floor((timeLeft.value % 3600) / 60)
   const s = timeLeft.value % 60
-  return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`
+
+  if (h > 0) {
+    return `${h.toString().padStart(2, '0')}:${m
+      .toString()
+      .padStart(2, '0')}:${s.toString().padStart(2, '0')}`
+  }
+
+  return `${m.toString().padStart(2, '0')}:${s
+    .toString()
+    .padStart(2, '0')}`
 })
+
 
 onMounted(() => {
   const minutes = Number(localStorage.getItem('nap-time'))
@@ -62,12 +73,13 @@ onMounted(() => {
   line-height: 1.2;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
 
 .page {
   text-align: center;
   font-size: 30px;
-  font-family: 'Rubik Scribble', monospace;
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
   color: #4267b2;
 
 }
@@ -76,7 +88,7 @@ onMounted(() => {
   width: 300px;
   height: 200px;
   margin: 24px auto 32px;
-  background: #d3e2f5;
+  background:#2b2278;
   border-radius: 20px;
 
   display: flex;
@@ -85,7 +97,7 @@ onMounted(() => {
 
   font-size: 3rem;
   font-weight: bold;
-  color: #333;
+  color: #4267b2;
 }
 
 
@@ -96,20 +108,20 @@ button {
   font-weight: bold;
   border-radius: 12px;
   border: none;
-  color: white;
-  background-color: lightgray;
+  color: black;
+  background-color: #c0defc;
   cursor: not-allowed;
   opacity: 0.8;
   transition: transform 0.2s, background 0.2s;
 }
 
 button:disabled {
-  background-color: lightgray;
+  background:#2b2278;
   opacity: 0.6;
 }
 
 button:not(:disabled):hover {
-  background-color: lightgray;
+  background:#2b2278;
   transform: translateY(-2px);
 }
 </style>

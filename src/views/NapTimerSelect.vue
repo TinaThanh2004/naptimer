@@ -25,12 +25,13 @@ function choose(minutes) {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
 
 .page {
   text-align: center;
   font-size: 30px;
-  font-family: 'Rubik Scribble', monospace;
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
   color: #4267b2;
 
 }
@@ -39,14 +40,14 @@ function choose(minutes) {
   width: 300px;
   height: 200px;
   margin: 24px auto 125px;
-  background: #d3e2f5;
+  background:#2b2278;
   padding: 0 30px;
   border-radius: 20px;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
+  font-size: 20px;
   font-family: "JetBrains Mono", monospace;
   font-weight: bold;
   color: #4267b2;
@@ -65,15 +66,17 @@ function choose(minutes) {
   padding: 10px;
   border: none;
   border-radius: 12px;
-  background: #ffffff;
-  color: #1a1a1a;
+  background:#2b2278;
+  color: #4267b2;
   font-weight: bold;
+  font-size: 30px;
   cursor: pointer;
   transition: all 0.2s;
 }
 
 .time-btn:hover {
   background: #4267b2;
+  color: #c0defc;
   transform: translateY(-2px);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
