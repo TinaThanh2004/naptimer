@@ -48,6 +48,7 @@ import ClickIcon from '@/picture/click.svg'
   text-align: center;
   line-height: 1.2;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+
 }
 
 button {
